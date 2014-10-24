@@ -1,0 +1,106 @@
+html, body{
+	height:100%;
+	background:#f0f1f1;
+	font-family: 'Raleway', sans-serif;
+}
+.leftMenu{
+	background:#474544;
+	width:220px;
+	height:100%;
+	float:left;
+	position:fixed;
+}
+.header{
+	width:calc(100% - 220px);
+	position:fixed;
+	/* CALC FOR SAFARI
+	*/
+	width: -webkit-calc(100% - 220px); 
+	width: -moz-calc(100% - 220px); 
+	width: -ms-calc(100% - 220px); 
+	width: -o-calc(100% - 220px); 
+	
+	
+	height:50px;
+	background:#474544;
+	top:0px;
+	left:220px;
+	float:right;
+	z-index:999999999;
+}
+
+.page{
+	margin-left:300px;
+	margin-top:100px;
+	float:left;
+}
+
+label{font-weight:normal !important; }
+
+	/* Sidebar Styles */
+	.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+	.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 40px;
+	font-family: 'Oswald', sans-serif;
+	font-size:16px;
+	}
+	.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color:#ffffff;
+	}
+	.sidebar-nav li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+	}
+	.sidebar-nav li a:active,
+	.sidebar-nav li a:focus {
+	text-decoration: none;
+	}
+	.sidebar-nav > .sidebar-brand {
+	height: 50px;
+	font-size: 18px;
+	line-height: 60px;
+	color: #faf85d;
+	}
+	.sidebar-nav > .sidebar-brand a {
+	color: #000000;
+
+	height:50px;
+	width:220px;
+	}
+	.sidebar-nav > .sidebar-brand a:hover {
+	color: #fff;
+	background: none;
+	}
+	@media(min-width:768px) {
+	#wrapper {
+	padding-left: 250px;
+	}
+	#wrapper.toggled {
+	padding-left: 0;
+	}
+	#sidebar-wrapper {
+	width: 250px;
+	}
+	#wrapper.toggled #sidebar-wrapper {
+	width: 0;
+	}
+	#page-content-wrapper {
+	padding: 20px;
+	}
+	#wrapper.toggled #page-content-wrapper {
+	position: relative;
+	margin-right: 0;
+	}
+	}
+	/* End of Sidebar Styles */

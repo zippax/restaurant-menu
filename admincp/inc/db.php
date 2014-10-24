@@ -1,0 +1,8 @@
+<?php
+include("inc/config.php");
+define('DB_SERVER', $host);
+define('DB_USERNAME', $user);
+define('DB_PASSWORD', $password);
+define('DB_DATABASE', $dbname);
+$db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+?>

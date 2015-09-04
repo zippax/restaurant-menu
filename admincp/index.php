@@ -71,7 +71,9 @@ $geturl = curPageURL();
 		<li>
 		<a href="index.php?do=update_password"><?=$zi_changePassword;?></a>
 		</li>
-	
+		<li>
+		<a href="http://www.zippax.com">Help</a>
+		</li>
 		<li >
 		<a style="color:#52cce6" href="index.php?do=logout"><span class="glyphicon glyphicon-log-out"></span> <?=$zi_logout;?></a>
 		</li>
